@@ -421,3 +421,90 @@ footer h1{
     text-align: center;
     color: #7e9594;
 }
+
+
+/* responsiv pada ponsel */
+@media (min-width: 320px) and (max-width: 767px){ 
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    
+    .container .nama{
+        color: #565656 ;
+        font-weight: 500;
+        font-size: 1em;
+        text-decoration: none;
+        font-family: 'Amatic SC', cursive; 
+    }
+    
+    .container .position{
+        color: #565656 ;
+        font-weight: 700;
+        font-size: 2em;
+        text-decoration: none;
+        font-family: 'Amatic SC', cursive; 
+    }
+
+
+    /* bagian navigasi */
+
+    
+#header ul li{
+    list-style: none;
+    margin-left: 10px;
+}
+
+#header ul li a{
+    text-decoration: none;
+    padding: 4px 10px;
+    color: #7e9594;
+    border-radius: 20px;
+}
+
+/* bagian profil diri */
+.utama{
+
+    width: 100%;
+}
+.photo{
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+}
+
+
+#content{
+    /* background-color:greenyellow; */
+    width: 50%;
+    height: auto;
+}
+
+.artikel_1 h1{
+    font-size: 7vh;
+}
+
+.artikel_1 h2{
+    font-size: 3vh;
+}
+.artikel_2{
+    /* background-color: #fff; */
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.artikel_2 p1{
+    font-size: 3vh;
+}
+
+
+
+
+    
+
+}
