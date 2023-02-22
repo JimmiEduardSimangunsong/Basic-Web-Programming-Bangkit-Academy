@@ -145,7 +145,7 @@ body{
 }
 
 /* bagian about */
-.about{
+#about{
     background-color: #7e9594;
     width: 100%;
     height: auto;
@@ -174,7 +174,7 @@ body{
     border: 10px solid #ffffff;
 }
 
-.about .text{
+#about .text{
     /* background-color: green; */
     width: 45%;
     height: auto;
@@ -196,7 +196,7 @@ body{
 
 /* bagian service */
 
-.service{
+#service{
     width: 100%;
     height: auto;
     justify-content: center;
@@ -205,7 +205,7 @@ body{
 }
 
 
-.service h1{
+#service h1{
     font-family: 'Phudu', cursive;
     font-size: 6vh;
     margin-bottom: 5px;
@@ -342,7 +342,7 @@ body{
 
 /* bagian koleksi, galeri */
 
-.koleksi h1{
+#koleksi h1{
     font-family: 'Phudu', cursive;
     font-size: 6vh;
     margin-bottom: 10px;
@@ -401,4 +401,23 @@ body{
 .galeri .box:nth-child(7){
     grid-column: span 2;
     grid-row: span 1;
+}
+
+/* bagian footer */
+footer{
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h1{
+    font-family: 'Phudu', cursive;
+    font-size: 4vh;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+    color: #7e9594;
 }
