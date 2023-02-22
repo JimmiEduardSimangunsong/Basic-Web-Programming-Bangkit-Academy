@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap');
+
+*{
+    font-family:'Poppins',sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background: #fff;
+    min-height: 100vh;
+}
+
+#header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+}
+
+.container .nama{
+    color: #565656 ;
+    font-weight: 700;
+    font-size: 3em;
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive; 
+}
+
+.container .position{
+    color: #565656 ;
+    font-weight: 700;
+    font-size: 5em;
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive; 
+}
+
+#header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+#header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #7e9594;
+    border-radius: 20px;
+}
+
+#header ul li a:hover,
+#header ul li a.active
+{
+    background: #7e9594;
+    color: #fff;
+}
+
+/* bagian main */
+.utama{
+    /* background-color: aqua; */
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+/* untuk bagian foto profil */
+.photo{
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.photo img{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 10px solid #7e9594;
+}
+
+#content{
+    /* background-color:greenyellow; */
+    width: 25%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.artikel_1{
+    background-color: #fff;
+    width: auto;
+    height: auto;
+    justify-content: center;
+}
+
+.artikel_1 h1{
+    font-family: 'Phudu', cursive;
+    font-size: 10vh;
+}
+
+.artikel_1 h2{
+    font-size: 5vh;
+}
+.artikel_2{
+    /* background-color: #fff; */
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.artikel_2 p1{
+    font-family: 'Phudu', cursive;
+    font-size: 5vh;
+    color: #094b65;
+}
+
+/* bagian about */
+.about{
+    background-color: #7e9594;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.picture{
+    /* background-color: blue; */
+    width: 20%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.picture img{
+    width: 100%;
+    border: 10px solid #ffffff;
+}
+
+.about .text{
+    /* background-color: green; */
+    width: 45%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.text h1{
+    font-family: 'Phudu', cursive;
+    font-size: 6vh;
+    margin-bottom: 5px;
+}
+
+.text p1{
+    font-size: 2.3vh;
+    font-family:'Poppins',sans-serif;
+}
+
+/* bagian service */
+
+.service{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+
+.service h1{
+    font-family: 'Phudu', cursive;
+    font-size: 6vh;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+.card{
+    display: grid;
+    grid-template-areas: "card1 card2 card3";
+    grid-template-columns: repeat(auto-fit, minmax(300px,2fr)); 
+    margin: 10px;
+    grid-auto-flow: dense;
+    gap: 30px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1{
+    grid-area: card1;
+    background-color:whitesmoke;
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.card1 img{
+    width: 25%;
+    height: 25%;
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.card1 h2{
+    font-family:'Poppins',sans-serif; 
+    text-align: center;
+    font-size: 4vh;
+}
+
+.card1 p1{
+    font-family:'Poppins',sans-serif; 
+    text-align: center;
+    font-size: 2.3vh;
+}
+
+.card2{
+    grid-area: card2;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+   
+}
+
+.card2 img{
+    width: 25%;
+    height: 25%;
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.card2 h2{
+    font-family:'Poppins',sans-serif; 
+    text-align: center;
+    font-size: 4vh;
+}
+
+.card2 p1{
+    font-family:'Poppins',sans-serif; 
+    text-align: center;
+    font-size: 2.3vh;
+}
+
+.card3{
+    grid-area: card3;
+    background-color:  whitesmoke;
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.card3 img{
+    width: 25%;
+    height: 25%;
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.card3 h2{
+    font-family:'Poppins',sans-serif; 
+    text-align: center;
+    font-size: 4vh;
+}
+
+.card3 p1{
+    font-family:'Poppins',sans-serif; 
+    text-align: center;
+    font-size: 2.3vh;
+}
