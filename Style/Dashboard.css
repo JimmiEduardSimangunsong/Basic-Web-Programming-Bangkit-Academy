@@ -234,6 +234,12 @@ body{
     padding-right: 30px;
 }
 
+.card1:hover{
+    background-color: #7e9594;
+    transition: 0.5s;
+}
+
+
 .card1 img{
     width: 25%;
     height: 25%;
@@ -265,6 +271,11 @@ body{
     padding-left: 30px;
     padding-right: 30px;
    
+}
+
+.card2:hover{
+    background-color: #7e9594;
+    transition: 0.5s;
 }
 
 .card2 img{
@@ -299,6 +310,11 @@ body{
     padding-right: 30px;
 }
 
+.card3:hover{
+    background-color: #7e9594;
+    transition: 0.5s;
+}
+
 .card3 img{
     width: 25%;
     height: 25%;
@@ -321,4 +337,68 @@ body{
     font-family:'Poppins',sans-serif; 
     text-align: center;
     font-size: 2.3vh;
+}
+
+
+/* bagian koleksi, galeri */
+
+.koleksi h1{
+    font-family: 'Phudu', cursive;
+    font-size: 6vh;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.galeri{
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-template-rows: minmax(100px,auto);
+    margin: 40px;
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+}
+
+.galeri .box{
+    color: #fff;
+    background:#7e9594;
+    display: grid;
+    font-size: 20px;
+    place-items: center;
+    text-align: center;
+    transition: o.5s;
+}
+
+
+.galeri .box img{
+    position: relative;
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+.galeri .box:nth-child(1){
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.galeri .box:nth-child(2){
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.galeri .box:nth-child(4){
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.galeri .box:nth-child(5){
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.galeri .box:nth-child(7){
+    grid-column: span 2;
+    grid-row: span 1;
 }
