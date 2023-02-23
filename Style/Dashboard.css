@@ -6,20 +6,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap');
 
-*{
-    font-family:'Poppins',sans-serif;
+* {
+    font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     overflow-x: hidden;
     background: #fff;
     min-height: 100vh;
 }
 
-header{
+#myHeader {
+    background-color: #d2dede;
     top: 0;
     left: 0;
     width: 100%;
@@ -28,58 +29,58 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 10000;
+    margin-bottom: 25px;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     width: 50%;
     height: 50%;
 }
 
-.container .nama{
-    color: #565656 ;
+.container .nama {
+    color: #565656;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive;
+}
+
+.container .position {
+    color: #565656;
     font-weight: 700;
     font-size: 3em;
     text-decoration: none;
-    font-family: 'Amatic SC', cursive; 
+    font-family: 'Amatic SC', cursive;
 }
 
-.container .position{
-    color: #565656 ;
-    font-weight: 700;
-    font-size: 5em;
-    text-decoration: none;
-    font-family: 'Amatic SC', cursive; 
-}
-
-header ul{
+#myHeader ul {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header ul li{
+#myHeader ul li {
     list-style: none;
     margin-left: 20px;
 }
 
-header ul li a{
+#myHeader ul li a {
     text-decoration: none;
     padding: 6px 15px;
     color: #7e9594;
     border-radius: 20px;
 }
 
-header ul li a:hover,
-header ul li a.active
-{
+#myHeader ul li a:hover,
+#myHeader ul li a.active {
     background: #7e9594;
     color: #fff;
 }
 
 /* bagian main */
-.utama{
+.utama {
     /* background-color: aqua; */
     width: 100%;
     height: auto;
@@ -91,7 +92,7 @@ header ul li a.active
 }
 
 /* untuk bagian foto profil */
-.photo{
+.photo {
     width: auto;
     height: auto;
     justify-content: center;
@@ -99,7 +100,7 @@ header ul li a.active
     margin-top: 3px;
 }
 
-.photo img{
+.photo img {
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -108,42 +109,43 @@ header ul li a.active
     border: 10px solid #7e9594;
 }
 
-#content{
+#content {
     width: 25%;
     height: 20%;
     justify-content: center;
     align-items: center;
 }
 
-.artikel_1{
+.artikel_1 {
     background-color: #fff;
     width: auto;
     height: auto;
     justify-content: center;
 }
 
-.artikel_1 h1{
+.artikel_1 h1 {
     font-family: 'Phudu', cursive;
     font-size: 10vh;
 }
 
-.artikel_1 h2{
+.artikel_1 h2 {
     font-size: 5vh;
 }
-.artikel_2{
+
+.artikel_2 {
     width: 100%;
     height: 100%;
     justify-content: center;
 }
 
-.artikel_2 p1{
+.artikel_2 p1 {
     font-family: 'Phudu', cursive;
     font-size: 5vh;
     color: #094b65;
 }
 
 /* bagian about */
-#about{
+#about {
     background-color: #7e9594;
     width: 100%;
     height: auto;
@@ -158,7 +160,7 @@ header ul li a.active
     margin-bottom: 10px;
 }
 
-.picture{
+.picture {
     width: 20%;
     height: auto;
     justify-content: center;
@@ -166,12 +168,12 @@ header ul li a.active
     margin-top: 2px;
 }
 
-.picture img{
+.picture img {
     width: 100%;
     border: 10px solid #ffffff;
 }
 
-#about .text{
+#about .text {
     width: 45%;
     height: auto;
     justify-content: center;
@@ -179,20 +181,20 @@ header ul li a.active
     margin-top: 3px;
 }
 
-.text h1{
+.text h1 {
     font-family: 'Phudu', cursive;
     font-size: 6vh;
     margin-bottom: 5px;
 }
 
-.text p1{
+.text p1 {
     font-size: 2.3vh;
-    font-family:'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* bagian service */
 
-#service{
+#service {
     width: 100%;
     height: auto;
     justify-content: center;
@@ -201,7 +203,7 @@ header ul li a.active
 }
 
 
-#service h1{
+#service h1 {
     font-family: 'Phudu', cursive;
     font-size: 6vh;
     margin-bottom: 5px;
@@ -212,10 +214,10 @@ header ul li a.active
 
 
 
-.card{
+.card {
     display: grid;
     grid-template-areas: "card1 card2 card3";
-    grid-template-columns: repeat(auto-fit, minmax(300px,2fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
     margin: 10px;
     grid-auto-flow: dense;
     gap: 30px;
@@ -224,21 +226,21 @@ header ul li a.active
     align-items: center;
 }
 
-.card1{
+.card1 {
     grid-area: card1;
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     border-radius: 15px;
     padding-left: 30px;
     padding-right: 30px;
 }
 
-.card1:hover{
+.card1:hover {
     background-color: #7e9594;
     transition: 0.5s;
 }
 
 
-.card1 img{
+.card1 img {
     width: 25%;
     height: 25%;
     border-radius: 100%;
@@ -250,33 +252,33 @@ header ul li a.active
 
 }
 
-.card1 h2{
-    font-family:'Poppins',sans-serif; 
+.card1 h2 {
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 4vh;
 }
 
-.card1 p1{
-    font-family:'Poppins',sans-serif; 
+.card1 p1 {
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 2.3vh;
 }
 
-.card2{
+.card2 {
     grid-area: card2;
     background-color: whitesmoke;
     border-radius: 15px;
     padding-left: 30px;
     padding-right: 30px;
-   
+
 }
 
-.card2:hover{
+.card2:hover {
     background-color: #7e9594;
     transition: 0.5s;
 }
 
-.card2 img{
+.card2 img {
     width: 25%;
     height: 25%;
     border-radius: 100%;
@@ -288,32 +290,32 @@ header ul li a.active
 
 }
 
-.card2 h2{
-    font-family:'Poppins',sans-serif; 
+.card2 h2 {
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 4vh;
 }
 
-.card2 p1{
-    font-family:'Poppins',sans-serif; 
+.card2 p1 {
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 2.3vh;
 }
 
-.card3{
+.card3 {
     grid-area: card3;
-    background-color:  whitesmoke;
+    background-color: whitesmoke;
     border-radius: 15px;
     padding-left: 30px;
     padding-right: 30px;
 }
 
-.card3:hover{
+.card3:hover {
     background-color: #7e9594;
     transition: 0.5s;
 }
 
-.card3 img{
+.card3 img {
     width: 25%;
     height: 25%;
     border-radius: 100%;
@@ -325,14 +327,14 @@ header ul li a.active
 
 }
 
-.card3 h2{
-    font-family:'Poppins',sans-serif; 
+.card3 h2 {
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 4vh;
 }
 
-.card3 p1{
-    font-family:'Poppins',sans-serif; 
+.card3 p1 {
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 2.3vh;
 }
@@ -340,7 +342,7 @@ header ul li a.active
 
 /* bagian koleksi, galeri */
 
-#koleksi h1{
+#koleksi h1 {
     font-family: 'Phudu', cursive;
     font-size: 6vh;
     margin-bottom: 10px;
@@ -348,20 +350,20 @@ header ul li a.active
     text-align: center;
 }
 
-.galeri{
+.galeri {
     position: relative;
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
-    grid-template-rows: minmax(100px,auto);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: minmax(100px, auto);
     margin: 40px;
     grid-auto-flow: dense;
     grid-gap: 10px;
 }
 
-.galeri .box{
+.galeri .box {
     color: #fff;
-    background:#7e9594;
+    background: #7e9594;
     display: grid;
     font-size: 20px;
     place-items: center;
@@ -370,39 +372,39 @@ header ul li a.active
 }
 
 
-.galeri .box img{
+.galeri .box img {
     position: relative;
     max-width: 200px;
     margin-bottom: 10px;
 }
 
-.galeri .box:nth-child(1){
+.galeri .box:nth-child(1) {
     grid-column: span 2;
     grid-row: span 1;
 }
 
-.galeri .box:nth-child(2){
+.galeri .box:nth-child(2) {
     grid-column: span 1;
     grid-row: span 2;
 }
 
-.galeri .box:nth-child(4){
+.galeri .box:nth-child(4) {
     grid-column: span 1;
     grid-row: span 2;
 }
 
-.galeri .box:nth-child(5){
+.galeri .box:nth-child(5) {
     grid-column: span 1;
     grid-row: span 2;
 }
 
-.galeri .box:nth-child(7){
+.galeri .box:nth-child(7) {
     grid-column: span 2;
     grid-row: span 1;
 }
 
 /* bagian footer */
-footer{
+footer {
     background-color: white;
     width: 100%;
     height: 100px;
@@ -411,7 +413,7 @@ footer{
     align-items: center;
 }
 
-footer h1{
+footer h1 {
     font-family: 'Phudu', cursive;
     font-size: 4vh;
     margin-bottom: 5px;
@@ -421,170 +423,174 @@ footer h1{
 }
 
 
-.sticky{
-position: -webkit-sticky;
-  position: sticky;
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
 }
 
 
 /* responsiv pada ponsel */
-@media (min-width: 320px) and (max-width: 767px){ 
-    
-    *{
+@media (min-width: 320px) and (max-width: 767px) {
+
+    * {
         overflow-x: hidden;
     }
 
-    header{
+    #myHeader {
         width: 100%;
         display: flex;
         flex-direction: column;
     }
-    .container{
-        flex-direction: row;
+
+    .container {
+        flex-direction: column;
         width: 150%;
         margin-bottom: 10px;
         gap: 10px;
     }
-    
-    .container .nama{
+
+    .container .nama {
         width: 100%;
         font-size: 3vh;
-        text-align: center; 
+        text-align: center;
         padding-top: 30px;
     }
-    
-    .container .position{
+
+    .container .position {
         width: 100%;
         font-size: 4vh;
+        text-align: center;
     }
 
 
- /* bagian navigasi */
+    /* bagian navigasi */
 
- header ul{
-    flex-direction: column;
-    gap: 5px;
-}
+    #myHeader ul {
+        flex-direction: column;
+        gap: 5px;
+    }
 
-/* bagian profil diri */
-.utama{
+    /* bagian profil diri */
+    .utama {
 
-    width: 100%;
-}
-.photo{
-    width: 30%;
+        width: 100%;
+    }
 
-}
+    .photo {
+        width: 30%;
 
-
-#content{
-    /* background-color:greenyellow; */
-    width: 50%;
-    height: auto;
-}
-
-.artikel_1 h1{
-    font-size: 7vh;
-}
-
-.artikel_1 h2{
-    font-size: 3vh;
-}
-.artikel_2{
-    /* background-color: #fff; */
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-}
-
-.artikel_2 p1{
-    font-size: 3vh;
-}
-
-/* bagian about */
-
-#about{
-    width: 100%;
-    flex-direction: column;
-}
-
-.picture{
-    width: 50%;
-}
-
-.text h1{
-    text-align: center;
-}
+    }
 
 
-/* bagian service */
-.card{
-    grid-template-areas: "card1" 
-    "card2"
-    "card3";
-    align-items: center;
-}
+    #content {
+        /* background-color:greenyellow; */
+        width: 50%;
+        height: auto;
+    }
 
-.card3{
-    width: 100%;
-}
+    .artikel_1 h1 {
+        font-size: 7vh;
+    }
 
-.card2{
-    width: 100%;
-}
+    .artikel_1 h2 {
+        font-size: 3vh;
+    }
 
-.card1{
-    width: 100%;
-}
+    .artikel_2 {
+        /* background-color: #fff; */
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
 
+    .artikel_2 p1 {
+        font-size: 3vh;
+    }
 
-/* bagian galeri */
+    /* bagian about */
 
-.galeri .box:nth-child(1){
-    grid-column: span 1;
-    grid-row: span 1;
-}
+    #about {
+        width: 100%;
+        flex-direction: column;
+    }
 
-.galeri .box:nth-child(2){
-    grid-column: span 1;
-    grid-row: span 1;
-}
+    .picture {
+        width: 50%;
+    }
 
-.galeri .box:nth-child(3){
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-
-.galeri .box:nth-child(4){
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-.galeri .box:nth-child(5){
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-.galeri .box:nth-child(6){
-    grid-column: span 1;
-    grid-row: span 1;
-}
+    .text h1 {
+        text-align: center;
+    }
 
 
-.galeri .box:nth-child(7){
-    grid-column: span 1;
-    grid-row: span 1;
-}
+    /* bagian service */
+    .card {
+        grid-template-areas: "card1"
+            "card2"
+            "card3";
+        align-items: center;
+    }
 
-.galeri{
-    width: 100%;
-    margin: 0%;
-}
+    .card3 {
+        width: 100%;
+    }
+
+    .card2 {
+        width: 100%;
+    }
+
+    .card1 {
+        width: 100%;
+    }
+
+
+    /* bagian galeri */
+
+    .galeri .box:nth-child(1) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .galeri .box:nth-child(2) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .galeri .box:nth-child(3) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+
+    .galeri .box:nth-child(4) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .galeri .box:nth-child(5) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .galeri .box:nth-child(6) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+
+    .galeri .box:nth-child(7) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .galeri {
+        width: 100%;
+        margin: 0%;
+    }
 
 
 
 
-    
+
 
 }
