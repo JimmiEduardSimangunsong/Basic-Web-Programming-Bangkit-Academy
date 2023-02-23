@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header >
+    <header id="myHeader">
         <div class="container">
             <h2 class="nama">Jimmi Eduard .S</h2>
             <h1 class="position">Cloud Computing Student</h1>
@@ -63,7 +63,6 @@
             <img src="picture/jimmi_ilkom.jpg" alt="Foto Jimmi">
         </div>
     </div>
-
     <div id="service">
         <h1>Services</h1>
         <div class="card">
@@ -118,14 +117,16 @@
         </div>
     </div>
 
-    <footer><h1>Create With ❤ By Jimmi Eduard Simangunsong</h1></footer>
+    <footer>
+        <h1>Create With ❤ By Jimmi Eduard Simangunsong</h1>
+    </footer>
 
     <script>
         window.onscroll = function () {
             myFunction()
         };
 
-        var header = document.getElementsByTagName("header");
+        var header = document.getElementById("myHeader");
         var sticky = header.offsetTop;
 
         function myFunction() {
@@ -135,9 +136,6 @@
                 header.classList.remove("sticky");
             }
         }
-
-
-
     </script>
 
 </body>
