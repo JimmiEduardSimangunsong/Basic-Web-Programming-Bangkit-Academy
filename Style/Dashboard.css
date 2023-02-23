@@ -19,7 +19,7 @@ body{
     min-height: 100vh;
 }
 
-#header{
+header{
     top: 0;
     left: 0;
     width: 100%;
@@ -53,26 +53,26 @@ body{
     font-family: 'Amatic SC', cursive; 
 }
 
-#header ul{
+header ul{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#header ul li{
+header ul li{
     list-style: none;
     margin-left: 20px;
 }
 
-#header ul li a{
+header ul li a{
     text-decoration: none;
     padding: 6px 15px;
     color: #7e9594;
     border-radius: 20px;
 }
 
-#header ul li a:hover,
-#header ul li a.active
+header ul li a:hover,
+header ul li a.active
 {
     background: #7e9594;
     color: #fff;
@@ -109,7 +109,6 @@ body{
 }
 
 #content{
-    /* background-color:greenyellow; */
     width: 25%;
     height: 20%;
     justify-content: center;
@@ -132,7 +131,6 @@ body{
     font-size: 5vh;
 }
 .artikel_2{
-    /* background-color: #fff; */
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -161,7 +159,6 @@ body{
 }
 
 .picture{
-    /* background-color: blue; */
     width: 20%;
     height: auto;
     justify-content: center;
@@ -175,7 +172,6 @@ body{
 }
 
 #about .text{
-    /* background-color: green; */
     width: 45%;
     height: auto;
     justify-content: center;
@@ -213,6 +209,8 @@ body{
     margin-left: 5px;
     text-align: center;
 }
+
+
 
 .card{
     display: grid;
@@ -423,45 +421,49 @@ footer h1{
 }
 
 
+.sticky{
+position: -webkit-sticky;
+  position: sticky;
+}
+
+
 /* responsiv pada ponsel */
 @media (min-width: 320px) and (max-width: 767px){ 
-    .container{
+    
+    *{
+        overflow-x: hidden;
+    }
+
+    header{
+        width: 100%;
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height: auto;
+    }
+    .container{
+        flex-direction: row;
+        width: 150%;
+        margin-bottom: 10px;
+        gap: 10px;
     }
     
     .container .nama{
-        color: #565656 ;
-        font-weight: 500;
-        font-size: 1em;
-        text-decoration: none;
-        font-family: 'Amatic SC', cursive; 
+        width: 100%;
+        font-size: 3vh;
+        text-align: center; 
+        padding-top: 30px;
     }
     
     .container .position{
-        color: #565656 ;
-        font-weight: 700;
-        font-size: 2em;
-        text-decoration: none;
-        font-family: 'Amatic SC', cursive; 
+        width: 100%;
+        font-size: 4vh;
     }
 
 
-    /* bagian navigasi */
+ /* bagian navigasi */
 
-    
-#header ul li{
-    list-style: none;
-    margin-left: 10px;
-}
-
-#header ul li a{
-    text-decoration: none;
-    padding: 4px 10px;
-    color: #7e9594;
-    border-radius: 20px;
+ header ul{
+    flex-direction: column;
+    gap: 5px;
 }
 
 /* bagian profil diri */
@@ -470,11 +472,8 @@ footer h1{
     width: 100%;
 }
 .photo{
-    width: 50%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3px;
+    width: 30%;
+
 }
 
 
@@ -500,6 +499,87 @@ footer h1{
 
 .artikel_2 p1{
     font-size: 3vh;
+}
+
+/* bagian about */
+
+#about{
+    width: 100%;
+    flex-direction: column;
+}
+
+.picture{
+    width: 50%;
+}
+
+.text h1{
+    text-align: center;
+}
+
+
+/* bagian service */
+.card{
+    grid-template-areas: "card1" 
+    "card2"
+    "card3";
+    align-items: center;
+}
+
+.card3{
+    width: 100%;
+}
+
+.card2{
+    width: 100%;
+}
+
+.card1{
+    width: 100%;
+}
+
+
+/* bagian galeri */
+
+.galeri .box:nth-child(1){
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.galeri .box:nth-child(2){
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.galeri .box:nth-child(3){
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+
+.galeri .box:nth-child(4){
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.galeri .box:nth-child(5){
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.galeri .box:nth-child(6){
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+
+.galeri .box:nth-child(7){
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.galeri{
+    width: 100%;
+    margin: 0%;
 }
 
 
